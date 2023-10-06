@@ -1,0 +1,68 @@
+/* 
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  position: relative;
+  font-weight: bold;
+  width:100vw;
+  margin-left: 5vw;
+  white-space: nowrap;
+
+}
+
+table thead th {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+table thead th:first-child {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  z-index: 2;
+}
+
+table tbody th{
+  position: sticky;
+  position: -webkit-sticky;
+  left:0;
+  background-color: white;
+  border: 2px solid black;
+  z-index: 1;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width:1100px){
+	body{
+		background-color: #D4E6F1;
+		height: 100vh;
+		
+		}
+	
+
+
+ 
+	.wrap {
+	  height: 80vh;
+	  position: relative;
+	  overflow: scroll;
+	  margin: 2em auto 20em;
+	  margin-left: 20px;
+	  max-width: 5000px;
+	  scroll-snap-type: x mandatory;
+	  -webkit-overflow-scrolling: touch;
+	  /*overscroll-behavior: contain;*/
+	  border: 4px dotted blue;
+	  background-color: white;
+}
+
+

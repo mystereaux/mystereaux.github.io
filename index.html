@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>R10 ER Toolbox App</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="./img/EPA.png" rel="apple-touch-icon" type="image/png">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/EPA.png" />
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+<style>
+img{
+  width: auto;
+  height: 18vh;
+}
+</style>
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-info text-dark">Home</a>
+		<div class="bg-dark text-dark">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Tables</u></b></div>
+        <a href="./MainPage/AirMonitoringTables.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Air Sampling/<br> &nbsp;&nbsp;&nbsp;Monitoring Table</a>
+        <a href="./MainPage/AnalyticalMethodsTable.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Soil/Waste/Water <br> &nbsp;&nbsp;&nbsp;Sampling Table</a>
+		<div class="bg-dark text-dark">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Reference Documents</u></b></div>
+        <a href="./MainPage/AirDecisionTree.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Air Decision Tree & Sampling</a>
+		<a href="./MainPage/QuickResponseGuides.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Quick Response Guides</a>
+		<a href="./MainPage/FirstStep.html" class="list-group-item list-group-item-action bg-light">&nbsp;-First Step & HazCat</a>
+        <a href="./MainPage/CBRNE.html" class="list-group-item list-group-item-action bg-light">&nbsp;-CWA, Bio, Rad & Decon</a>
+	    <a href="./MainPage/DataManagement.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Data Management & Processing</a>
+		<a href="./MainPage/QuickStartGuides.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Quick Start Guides</a>
+        <a href="./MainPage/ChemicalDataSheets.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Chemical Data Sheets</a>
+        <a href="./MainPage/VIPERDocuments.html" class="list-group-item list-group-item-action bg-light">&nbsp;-VIPER Documents</a>			
+        <a href="./MainPage/OtherReferenceDocuments.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Other Documents</a>		
+        <a href="./MainPage/TemplateDocuments(Word).html" class="list-group-item list-group-item-action bg-light">&nbsp;-Template Documents</a>		
+		<div class="bg-dark text-dark">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>External Links</u></b></div>
+        <a href="https://fs.response.epa.gov/adfs/ls?wa=wsignin1.0&wtrealm=https%3a%2f%2fresponse.epa.gov%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fsite%252flogin.aspx%253fReturnURL%253d%25252fsite%25252fregion_list.aspx%25253fregion%25253d10&wct=2021-04-30T20%3a29%3a34Z&wreply=https%3a%2f%2fresponse.epa.gov%2f" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-R10 OSC Response Sites</a>
+        <a href="https://cameochemicals.noaa.gov/search/simple" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-CAMEO Chemicals</a>
+        <a href="https://www.cdc.gov/niosh/npg/default.html" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-NIOSH Pocket Guide</a>
+        <a href="https://pacteels.pnnl.gov/#/" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-PAC Database</a>
+
+		</div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Main Menu</button>
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        <!-- </button> -->
+
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div> -->
+      </nav>
+
+ <div class="container-fluid">
+
+        <h3 class="mt-4"><center>R10 Emergency Response<br>Toolbox<center></h3>
+		<center><img src="./img/EPA.png" alt="logo"></center>
+		<h3 class="mt-4"><center>October 2023<center></h3>
+		<p></p>
+        <p>This R10 Emergency Response Toolbox web app contains QuickStart Guides, air monitoring information,
+		sampling information, and other information that may be referenced in the field in various emergency response scenarios.</p>
+		<h6> Offline Access</h6>
+        <p>This web app is available offline. However, certain operating systems and devices may clear
+		unused cached files after a set period of time, and the file set may be updated periodically. Therefore, it is best practice to open this page (the homepage) once prior to visiting a potential offline area.</p>
+		<p> </p>
+		<h6> Mobile Access </h6>
+		<p> To access the web app from a mobile device, simply navigate to this URL on your browser app (Chrome and Safari are recommended for Android and iOS, respectively)
+		<p> It is recommended that you add this web app to your home screen. This will provide better access to the app, and will improve the offline capability. </p>
+		<p> ->On iOS Safari, while viewing the home page of the web app, tap the Share icon (square with arrow pointing out of it) at the bottom of the screen. Then, scroll down and tap "Add to Home Screen"</p>
+		<p> ->On Android Chrome, while viewing the home page of the web app, tap the button with the three dots at the top right of the screen. Then tap "Add to Home screen"</p>
+		
+		
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+
+
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ERG General App</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/simple-sidebar.css" rel="stylesheet">
+ <link href="../img/EPA.png" rel="apple-touch-icon" type="image/png">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/ERGlogo.png" />
+  </head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+       <div class="list-group list-group-flush">
+        <a href="../index.html" class="list-group-item list-group-item-action bg-light">Home</a>
+		<div class="bg-dark text-dark">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Tables</u></b></div>
+        <a href="../MainPage/AirMonitoringTables.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Air Sampling/<br> &nbsp;&nbsp;&nbsp;Monitoring Table</a>
+        <a href="../MainPage/AnalyticalMethodsTable.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Soil/Waste/Water <br> &nbsp;&nbsp;&nbsp;Sampling Table</a>
+		<div class="bg-dark text-dark">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Reference Documents</u></b></div>
+        <a href="../MainPage/AirDecisionTree.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Air Decision Tree & Sampling</a>
+		<a href="../MainPage/QuickResponseGuides.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Quick Response Guides</a>
+		<a href="../MainPage/FirstStep.html" class="list-group-item list-group-item-action bg-light">&nbsp;-First Step & HazCat</a>
+        <a href="../MainPage/CBRNE.html" class="list-group-item list-group-item-action bg-light">&nbsp;-CWA, Bio, Rad & Decon</a>
+	    <a href="../MainPage/DataManagement.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Data Management & Processing</a>
+		<a href="../MainPage/QuickStartGuides.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Quick Start Guides</a>
+        <a href="../MainPage/ChemicalDataSheets.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Chemical Data Sheets</a>
+        <a href="../MainPage/VIPERDocuments.html" class="list-group-item list-group-item-action bg-light">&nbsp;-VIPER Documents</a>			
+        <a href="../MainPage/OtherReferenceDocuments.html" class="list-group-item list-group-item-action bg-light">&nbsp;-Other Documents</a>		
+        <a href="../MainPage/TemplateDocuments(Word).html" class="list-group-item list-group-item-action bg-light">&nbsp;-Template Documents</a>		
+		<div class="bg-dark text-dark">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>External Links</u></b></div>
+        <a href="https://fs.response.epa.gov/adfs/ls?wa=wsignin1.0&wtrealm=https%3a%2f%2fresponse.epa.gov%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fsite%252flogin.aspx%253fReturnURL%253d%25252fsite%25252fregion_list.aspx%25253fregion%25253d10&wct=2021-04-30T20%3a29%3a34Z&wreply=https%3a%2f%2fresponse.epa.gov%2f" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-R10 OSC Response Sites</a>
+        <a href="https://cameochemicals.noaa.gov/search/simple" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-CAMEO Chemicals</a>
+        <a href="https://www.cdc.gov/niosh/npg/default.html" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-NIOSH Pocket Guide</a>
+        <a href="https://pacteels.pnnl.gov/#/" target="_blank" rel="noreferrer noopener" class="list-group-item list-group-item-action bg-light">&nbsp;-PAC Database</a>
+
+</div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+<!-- 		<input type="button" value="Home" onclick="window.location.href='../index.html'"/>
+		<input type="button" value="back" onclick="history.back()"/> -->
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Main Menu</button>
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        <!-- </button> -->
+
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+          <!-- <ul class="navbar-nav ml-auto mt-2 mt-lg-0"> -->
+            <!-- <li class="nav-item active"> -->
+              <!-- <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> -->
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+              <!-- <a class="nav-link" onclick="history.back()">Back</a> -->
+            <!-- </li> -->
+            <!-- <!-- <li class="nav-item dropdown"> -->
+              <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                <!-- Dropdown -->
+              <!-- </a> -->
+              <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+                <!-- <a class="dropdown-item" href="#">Action</a> -->
+                <!-- <a class="dropdown-item" href="#">Another action</a> -->
+                <!-- <div class="dropdown-divider"></div> -->
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              <!-- </div> -->
+            <!-- </li> --> 
+          <!-- </ul> -->
+        <!-- </div> -->
+      </nav>
+
+      <div class="container-fluid">
+        <h3 class="mt-4"><center>R10 Air Monitoring Decision Tree<center></h3>
+        <!-- <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p> -->
+        <!-- <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p> -->
+          <div id="_thePdf"></div>
+    <div id="hidenButton" style="display: none;">
+        <button onclick="hideDoc()">Close Document Window</button>
+    </div>
+
+    <table id="MainPage Item">
+      <tr><td><a href="../doc/FileStructure/Common/R10Docs/R10 Air Monitoring & Sampling - Decision Tree.pdf">R10 Emergency Response Air Decision Tree</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/R10Docs/R10 Air Monitoring & Sampling - SOG.pdf">R10 Air Monitoring & Sampling SOG</a> </td></tr>
+    </table>
+
+		        <h4 class="mt-4"><center>EPA Methods<center></h4>
+    <table>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/EPA Method TO-4A.pdf">EPA Method TO-4A</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/EPA TO-9A.pdf">EPA Method TO-9A</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/EPA TO-10A.pdf">EPA Method TO-10A</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/EPA Method TO-13A.pdf">EPA Method TO-13A</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/EPA Method TO-15.pdf">EPA Method TO-15</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/EPA Method TO-17.pdf">EPA Method TO-17</a></td></tr>
+			</table>
+		        <h4 class="mt-4"><center>NIOSH Methods<center></h4>			
+		<table>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 0500.pdf">NIOSH Method 0500</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1003 Hydrocarbons Halogenated.pdf">NIOSH Method 1003</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1005 Methylene Chloride.pdf">NIOSH Method 1005</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1007 Vinyl Chloride.pdf">NIOSH Method 1007</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1016.pdf">NIOSH Method 1016</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1020 1,1,2-Trichloro-1,2,2-Trifluoroethane.pdf">NIOSH Method 1020</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1022 Trichloroethylene.pdf">NIOSH Method 1022</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1024.pdf">NIOSH Method 1024</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1300.pdf">NIOSH Method 1300</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1400 Alcohols.pdf">NIOSH Method 1400</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 1459.pdf">NIOSH Method 1459</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1500 Hydrocarbons, BP 36-216 C.pdf">NIOSH Method 1500</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1501 Hydrocarbons, Aromatic.pdf">NIOSH Method 1501</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1550 Naphthas.pdf">NIOSH Method 1550</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1603 Acetic Acid.pdf">NIOSH Method 1603</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1604.pdf">NIOSH Method 1604</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 1610.pdf">NIOSH Method 1610</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 2000.pdf">NIOSH Method 2000</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 2016.pdf">NIOSH Method 2016</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 2500.pdf">NIOSH Method 2500</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 2538.pdf">NIOSH Method 2538</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 2542 Mercaptans, Methyl-, Ethyl-, and n-Butyl.pdf">NIOSH Method 2542</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 2552.pdf">NIOSH Method 2552</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 3503.pdf">NIOSH Method 3503</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 5022.pdf">NIOSH Method 5022</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 5023.pdf">NIOSH Method 5023</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 5503.pdf">NIOSH Method 5503</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 5506.pdf">NIOSH Method 5506</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 5510.pdf">NIOSH Method 5510</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 5512.pdf">NIOSH Method 5512</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 6001 Arsine.pdf">NIOSH Method 6001</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 6002.pdf">NIOSH Method 6002</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 6004.pdf">NIOSH Method 6004</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 6005.pdf">NIOSH Method 6005</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 6009 Mercury.pdf">NIOSH Method 6009</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 6010 Hydrogen Cyanide.pdf">NIOSH Method 6010</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 6011.pdf">NIOSH Method 6011</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 6014.pdf">NIOSH Method 6014</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 6015 Ammonia.pdf">NIOSH Method 6015</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 6600.pdf">NIOSH Method 6600</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7024.pdf">NIOSH Method 7024</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7029.pdf">NIOSH Method 7029</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7048.pdf">NIOSH Method 7048</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7056 Barium, soluble compounds.pdf">NIOSH Method 7056</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7300 Elements by ICP (Nitric and Perchloric Acid Ashing).pdf">NIOSH Method 7300</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7301.pdf">NIOSH Method 7301</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7303.pdf">NIOSH Method 7303</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7400 Asbestos and Other Fibers by PCM.pdf">NIOSH Method 7400</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7401.pdf">NIOSH Method 7401</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7402.pdf">NIOSH Method 7402</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7605.pdf">NIOSH Method 7605</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH 7900 Arsenic and Compounds as As (Except AsH3 and As2O3).pdf">NIOSH Method 7900</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7904.pdf">NIOSH Method 7904</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7905.pdf">NIOSH Method 7905</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7906.pdf">NIOSH Method 7906</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7907.pdf">NIOSH Method 7907</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/NIOSH Method 7908.pdf">NIOSH Method 7908</a></td></tr>
+	  </table>
+	  
+	  		        <h4 class="mt-4"><center>OSHA Methods<center></h4>
+	  <table>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 05 Chloroform.pdf">OSHA ID 05</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 34 Dimethylamine.pdf">OSHA ID 34</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 52 Acrolein (Formaldehyde).pdf">OSHA ID 52</a></td></tr> 
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 54 Methyl Isocyanate.pdf">OSHA ID 54</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 56.pdf">OSHA ID 56</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 61 Phosgene.pdf">OSHA ID 61</a> </td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 89 Styrene.pdf">OSHA ID 89</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA Method ID-111.pdf">OSHA ID 111</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 121 Metal and Metalloid Particulates.pdf">OSHA ID 121</a> </td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA Method ID-145.pdf">OSHA ID 145</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 188 Ammonia.pdf">OSHA ID 188 </a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA Method ID-209.pdf">OSHA ID 209</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA ID 212.pdf">OSHA ID 212</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 1005 Benzene.pdf">OSHA ID 1005</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 1008.pdf">OSHA ID 1008</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA 1019.pdf">OSHA ID 1019</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA PV2010.pdf">OSHA ID PV2010</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA Method PV2040.pdf">OSHA ID PV2040</a></td></tr>
+	  <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA Method PV2077.pdf">OSHA PV2077</a></td></tr>
+      <tr><td><a href="../doc/FileStructure/Common/NIOSHAirSamplingMethods/OSHA Volatile Organic Compounds in Air PV2120.pdf">OSHA ID PV2120</a> </td></tr>
+    </table>
+
+    <script src="../js/pdfobject.min.js"></script>
+	  </div>
+	  
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+   <script>
+    function loadjscssfile(filename, filetype){
+        if (filetype=="js"){ //if filename is a external JavaScript file
+            var fileref=document.createElement('script')
+            fileref.setAttribute("type","text/javascript")
+            fileref.setAttribute("src", filename)
+        }
+        else if (filetype=="css"){ //if filename is an external CSS file
+            var fileref=document.createElement("link")
+            fileref.setAttribute("rel", "stylesheet")
+            fileref.setAttribute("type", "text/css")
+            fileref.setAttribute("href", filename)
+        }
+        if (typeof fileref!="undefined")
+            document.getElementsByTagName("head")[0].appendChild(fileref)
+    }
+
+    function removejscssfile(filename, filetype){
+        var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none" //determine element type to create nodelist from
+        var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none" //determine corresponding attribute to test for
+        var allsuspects=document.getElementsByTagName(targetelement)
+        for (var i=allsuspects.length; i>=0; i--){ //search backwards within nodelist for matching elements to remove
+        if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(filename)!=-1)
+            allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
+        }
+    }
+
+    var isPad = ((/\b(iPad)\b/.test(navigator.userAgent)
+      && /WebKit/.test(navigator.userAgent)
+      && !window.MSStream)
+      || (navigator.platform === 'MacIntel'
+      && navigator.maxTouchPoints
+      && navigator.maxTouchPoints === 5)
+    );
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      loadjscssfile("../css/simple-sidebar.css", "css");
+    }
+    else if (isPad)
+    {
+      loadjscssfile("../css/simple-sidebar.css", "css");
+    }
+    else
+    {
+      loadjscssfile("../css/simple-sidebar.css", "css");
+    }
+
+
+    function openDoc(linkSRC) {
+      //document.getElementById("demo").style.color = "red";
+      var isMobileDevice; 
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        isMobileDevice = true;
+      }else{
+        isMobileDevice = false
+      }
+
+      var options = {
+        page: 1,
+        width: isMobileDevice ? "800px" : "900px",
+        pdfOpenParams: {
+          navpanes: 1,
+          view: "FitH",
+          pagemode: "thumbs",
+        },
+        fallbackLink: "<p>The broswer does not support inline pdf, please open <a href='" + linkSRC + "'</a>" + linkSRC + "</p>"
+      };
+
+      var status = (PDFObject.supportsPDFs) ? "supports" : "does not support";
+
+      //var isPad = /iPad/i.test(navigator.userAgent);
+      var isPad = ((/\b(iPad)\b/.test(navigator.userAgent)
+          && /WebKit/.test(navigator.userAgent)
+          && !window.MSStream)
+          || (navigator.platform === 'MacIntel'
+          && navigator.maxTouchPoints
+          && navigator.maxTouchPoints === 5)
+        );
+      if (isPad) {
+        /* your code here */
+        document.getElementById('_thePdf').innerHTML = "<p>The broswer does not support inline pdf, please open a PDF file <a href='" + linkSRC + "'</a>" + linkSRC + "</p>";
+        document.getElementById('hidenButton').style.display = "block";
+      }
+      else
+      {
+        var myPDF = PDFObject.embed(linkSRC, "#_thePdf", options);
+
+        if (myPDF)
+        {
+          window.scrollTo(0, 0);
+          document.getElementById('hidenButton').style.display = "block";
+        }
+        else
+        {
+          window.open(linkSRC, "_blank");
+        }
+      }
+    }
+
+    function hideDoc() {
+      //PDFObject = null;
+      var div = document.getElementById('_thePdf');
+      while(div.firstChild){
+          div.removeChild(div.firstChild);
+      }
+      location.reload();
+    }
+    </script>
+</body>
+
+</html>

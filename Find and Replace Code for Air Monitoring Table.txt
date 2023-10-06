@@ -1,0 +1,61 @@
+﻿Instructions to reformat the Air Monitoring Table html file to work with the app, after exporting it from excel as a web page:
+Open in Notepad++. 
+
+Run the following find and replace (hit ctrl+f), in search mode= regular expression. Place check marks in "match case" and ". matches newline". 
+In each set, line 1 is the find, line 2 is the replace. 
+
+1. First, place <thead> and </thead> around the headers of the table, and <tbody and </tbody> around the body. The lines below will do this automatically. (changes to the first and last rows of the table might break this find and replace).
+	FIND: 
+	(<tr[^T]+Target.*?Sample.*?</tr>)(.*?Ludlum 2241.*?</tr>)
+	Replace:
+	<thead>\n\1\n</thead>\n<tbody>\2\n</tbody>
+
+2. Within thead (between <thead> and </thead>, replace all td with th. 
+	replace one at a time. 
+
+
+3. Replace the following symbols.
+
+degrees symbol
+°
+&deg;
+
+cubed
+³
+&#179;
+
+micro
+µ
+&micro;
+
+umlaut a
+ä
+&#228;
+
+4. the following find and replace expressions allow the left-most column to be "sticky" by replacing td with th. 
+The width of the column is 104; if the column width changes, you will need to replace 104 with the new width. 
+
+single line
+<td([^x]+x[^w]+width=104[^/]+)</td>
+<th\1</th>
+
+with breaks within chemical name
+<td([^x]+x[^w]+width=104[^/]+/[^/]+)</td>
+<th\1</th>
+
+removes spaces at the ends of lines
+(<span[^<]+</span>)
+replace with space.
+
+Finally, replace all th with td in the footer/notes section. Do not run this code on the entire page of code;
+rather, navigate to the footer section of the table (after </tbody>) and replace one at a time. 
+
+<th([^x]+x[^w]+width=104[^/]+)</th>
+<td\1</td>
+
+
+
+
+
+
+
