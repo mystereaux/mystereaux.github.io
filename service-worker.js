@@ -17,15 +17,17 @@ const cacheFiles = [
    './js/pdf.worker.js',
    './js/pdfobject.min.js',
    
-   './MainPage/QuickStartGuides.html',
+   './MainPage/AirDecisionTree.html',
    './MainPage/AirMonitoringTables.html',
+   './MainPage/AnalyticalMethodsTable.html',
+   './MainPage/CBRNE.html',  
    './MainPage/ChemicalDataSheets.html',
-   './MainPage/NIOSHAirSamplingMethods.html',
-   './MainPage/FirstStepsandPreparation.html',
+   './MainPage/DataManagement.html',   
+   './MainPage/FirstStep.html',
    './MainPage/OtherReferenceDocuments.html',
-   './MainPage/AnalyticalMethodsTable.html',   
+   './MainPage/QuickResponseGuides.html',
+   './MainPage/QuickStartGuides.html',   
    './MainPage/TemplateDocuments(Word).html',
-   './MainPage/HazCATManual.html',
    './MainPage/VIPERDocuments.html',
    
    './index.html',
@@ -34,6 +36,7 @@ const cacheFiles = [
      './doc/FileStructure/Common/VIPERDocuments/Viper- ProRae Guardian Setup.pdf',
      './doc/FileStructure/Common/VIPERDocuments/Viper- SmartGateway 2020.pdf',
 
+//This needs to be updated
    './doc/FileStructure/Common/Emergency_Response_Checklist.pdf',
    './doc/FileStructure/Common/Pre-Mob_and_On-Site_Decision_Tree.pdf',
    './doc/FileStructure/Common/QuickStartGuides/QSG AreaRAE Pro and AreaRAE Plus.pdf',
